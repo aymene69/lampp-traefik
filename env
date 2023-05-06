@@ -1,0 +1,36 @@
+COMPOSE_PROJECT_NAME=
+WEBSITE_HOST=
+TRAEFIK_NETWORK=
+# Possible values: php54, php56, php71, php72, php73, php74, php8, php81
+PHPVERSION=php81
+DOCUMENT_ROOT=./www
+APACHE_DOCUMENT_ROOT=/var/www/html
+VHOSTS_DIR=./config/vhosts
+APACHE_LOG_DIR=./logs/apache2
+PHP_INI=./config/php/php.ini
+SSL_DIR=./config/ssl
+
+# PHPMyAdmin
+UPLOAD_LIMIT=512M
+MEMORY_LIMIT=512M
+
+# Xdebug
+XDEBUG_LOG_DIR=./logs/xdebug
+XDEBUG_PORT=9003
+#XDEBUG_PORT=9000
+
+# Possible values: mysql57, mysql8, mariadb103, mariadb104, mariadb105, mariadb106
+DATABASE=mysql8
+MYSQL_INITDB_DIR=./config/initdb
+MYSQL_DATA_DIR=./data/mysql
+MYSQL_LOG_DIR=./logs/mysql
+
+
+HOST_MACHINE_MYSQL_PORT=
+
+HOST_MACHINE_REDIS_PORT=
+
+MYSQL_ROOT_PASSWORD=
+MYSQL_USER=
+MYSQL_PASSWORD=
+MYSQL_DATABASE=
